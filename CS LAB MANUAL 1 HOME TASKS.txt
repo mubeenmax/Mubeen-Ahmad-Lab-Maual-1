@@ -1,0 +1,93 @@
+                             CS LAB MANUAL1 HOME TASK
+
+                                 Question #1:
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double x1, y1, x2, y2;
+
+    //Get values from user.
+    cout<<"Enter the coordinates of the first point (x1 y1): "<<endl;
+    cin>>x1;
+    cin>>y1;
+
+    cout<<"Enter the coordinates of the second point (x2 y2): ";
+    cin>>x2;
+    cin>>y2;
+
+    //Use distance formula
+    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+
+    cout<<"The distance between the two points is: "<<distance<<endl;
+
+    return 0;
+}
+
+                                 Question #2:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    double lengthIncm;
+
+    //Taking lenght
+    cout<<"Enter the length in cm: "<<endl;
+    cin>>lengthIncm;
+
+    // Convertion
+    double lengthInmeters = lengthIncm / 100.0;
+    double lengthInKilometers = lengthIncm / 100000.0;
+    
+    cout<<"Length in meters: "<<lengthInmeters<<" m"<<endl;
+    cout<<"Length in kilometers: "<<lengthInKilometers<<" km"<<endl;
+
+    return 0;
+}
+
+
+                                  Question #3:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    double a,b;
+
+    //User gives values of a and b
+    cout<<"Enter the value of 'a': "<<endl;
+    cin>>a;
+
+    cout<<"Enter the value of 'b': "<<endl;
+    cin>>b;
+
+    //alculaton
+    double result=a*a + 2*a*b + b*b;
+
+    cout<<"The result of the polynomial a^2 + 2ab + b^2 is: "<<result<<endl;
+    return 0;
+}
+
+
+                                 Question #4:
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    double Fahrenheit,Celsius;
+
+    //Take value of temp
+    cout<<"Enter temperature in Fahrenheit: ";
+    cin>>Fahrenheit;
+
+    //Conversion
+    Celsius = (Fahrenheit-32)* 5/9;
+
+    cout<<"Temperature in Celsius: "<<Celsius<<"°C"<<endl;
+
+    return 0;
+}
